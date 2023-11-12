@@ -39,6 +39,7 @@ todo.txt
 
 # VSCode
 .vscode/
+.vs
 
 # Clangd
 .cache/

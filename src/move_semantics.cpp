@@ -92,7 +92,7 @@ int main() {
 
   // It would be unwise to try to do anything with int_array2 here. Uncomment
   // the code to try it out! (On my machine, this segfaults...) NOTE: THIS MIGHT
-  // WORK FOR YOU. THIS DOES NOT MEAN THAT THIS IS WISE TO DO! 
+  // WORK FOR YOU. THIS DOES NOT MEAN THAT THIS IS WISE TO DO!
   // std::cout << int_array2[1] << std::endl;
 
   // If we don't move the lvalue in the caller context to any lvalue in the

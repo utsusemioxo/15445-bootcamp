@@ -4,7 +4,7 @@ project(Bootcamp
         LANGUAGES CXX)
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-  if(CMAKE_CXX_COMPILER_VERSION MATCHES "^14.")
+  if(CMAKE_CXX_COMPILER_VERSION MATCHES "^16.")
     message(STATUS "You're using ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}")
   else()
     message(WARNING "!! We recommend that you use clang-14 for this bootcamp. You're using ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}, a different version.")

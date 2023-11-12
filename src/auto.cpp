@@ -22,7 +22,6 @@
 // context of for-each loops. However, using auto poses a risk where the
 // developer may not be aware of the types they are using, and therefore at risk
 // for buggy and non functional code. So be careful!
-
 // Basic templated class with very long name, to show the usefulness of auto.
 template <typename T, typename U> class Abcdefghijklmnopqrstuvwxyz {
 public:
@@ -69,7 +68,7 @@ int main() {
   // an extended period of time. Then, I'd imagine it would save a lot of
   // typing time!
 
-  // One important thing to note about the auto keyword is that it 
+  // One important thing to note about the auto keyword is that it
   // defaults to copying objects, which can lower performance. Take the
   // following example where we construct a int vector, and want to
   // define a variable that is a reference to it.
@@ -81,7 +80,7 @@ int main() {
 
   // However, the following code defines ref_int_values, which is a reference
   // to int_values, and therefore does not deep copy the int_values vector.
-  auto& ref_int_values = int_values;
+  auto &ref_int_values = int_values;
 
   // The auto keyword is also useful for iterating through C++ containers.
   // For instance, let's construct an unordered map with std::string keys
@@ -111,7 +110,7 @@ int main() {
   // and sets.
   std::vector<int> vec = {1, 2, 3, 4};
   std::cout << "Printing elements in vector with auto...\n";
-  for (const auto& elem : vec) {
+  for (const auto &elem : vec) {
     std::cout << elem << " ";
   }
   std::cout << std::endl;
